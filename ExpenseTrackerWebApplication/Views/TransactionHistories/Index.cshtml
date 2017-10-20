@@ -1,0 +1,83 @@
+﻿@model IEnumerable<ExpenseTrackerWebApplication.Models.TransactionHistory>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Transaction Histories:</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ItemName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Amount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cash)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Total)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Change)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tax)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TransactionDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EstablishmentName)
+            @*@Html.DropDownList()*@
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>
+                @item.ItemName
+            </th>
+            <th>
+                @item.Quantity
+            </th>
+            <th>
+                @item.Amount
+            </th>
+            <th>
+                @item.Cash
+            </th>
+            <th>
+                @item.Total
+            </th>
+            <th>
+                @item.Change
+            </th>
+            <th>
+                @item.Tax
+            </th>
+            <th>
+                @item.TransactionDate
+            </th>
+            <th>
+                @item.EstablishmentName
+            </th>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.PrimaryKey }) |
+                @Html.ActionLink("Details", "Details", new { id = item.PrimaryKey }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.PrimaryKey })
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,76 @@
+﻿@model ExpenseTrackerWebApplication.Models.TransactionHistory
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ItemName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Amount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cash)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Total)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Change)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tax)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TransactionDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EstablishmentName)
+        </th>
+        <th></th>
+    </tr>
+ 
+    <tr>
+        <th>
+            @Model.ItemName
+        </th>
+        <th>
+            @Model.Quantity
+        </th>
+        <th>
+            @Model.Amount
+        </th>
+        <th>
+            @Model.Cash
+        </th>
+        <th>
+            @Model.Total
+        </th>
+        <th>
+            @Model.Change
+        </th>
+        <th>
+            @Model.Tax
+        </th>
+        <th>
+            @Model.TransactionDate
+        </th>
+        <th>
+            @Model.EstablishmentName
+        </th>            
+    </tr>
+</table>
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

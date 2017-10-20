@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseTrackerWebApplication", "ExpenseTrackerWebApplication\ExpenseTrackerWebApplication.csproj", "{E508454C-A4ED-4BC2-A3ED-D390E2B4D5C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseTrackerWebApplication.Tests", "ExpenseTrackerWebApplication.Tests\ExpenseTrackerWebApplication.Tests.csproj", "{9C1AC601-AB34-4557-B0D5-D5AA9BE6C24E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E508454C-A4ED-4BC2-A3ED-D390E2B4D5C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E508454C-A4ED-4BC2-A3ED-D390E2B4D5C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E508454C-A4ED-4BC2-A3ED-D390E2B4D5C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E508454C-A4ED-4BC2-A3ED-D390E2B4D5C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C1AC601-AB34-4557-B0D5-D5AA9BE6C24E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C1AC601-AB34-4557-B0D5-D5AA9BE6C24E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C1AC601-AB34-4557-B0D5-D5AA9BE6C24E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C1AC601-AB34-4557-B0D5-D5AA9BE6C24E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
